@@ -21,13 +21,10 @@ public class Controller {
 
     Parent root;
 
-
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
         Button btn = (Button) event.getSource();
         String id = btn.getId();
-
-        System.out.println(id);
 
         if (id.equals("addExercise")) {
             root = FXMLLoader.load(getClass().getResource("addExercise.fxml"));
